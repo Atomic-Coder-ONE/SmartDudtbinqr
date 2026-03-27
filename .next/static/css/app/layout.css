@@ -193,3 +193,117 @@ textarea.input-field {
   background: var(--text-secondary);
 }
 
+/* Admin Panel Styles */
+.admin-float-btn {
+  position: fixed;
+  bottom: 24px;
+  right: 24px;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  background: var(--bg-card);
+  color: var(--accent-primary);
+  border: 1px solid var(--glass-border);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.4);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  z-index: 1000;
+  transition: all 0.3s ease;
+}
+
+.admin-float-btn:hover {
+  transform: translateY(-4px) scale(1.05);
+  box-shadow: 0 6px 25px rgba(16, 185, 129, 0.4);
+  background: var(--glass-bg);
+  border-color: var(--accent-primary);
+}
+
+.admin-modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.6);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  z-index: 1001;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+}
+
+.admin-modal-content {
+  width: 100%;
+  max-width: 550px;
+  max-height: 90vh;
+  background: var(--bg-primary);
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+
+.admin-modal-close {
+  position: absolute;
+  top: 16px;
+  right: 16px;
+  background: none;
+  border: none;
+  color: var(--text-secondary);
+  cursor: pointer;
+  padding: 4px;
+  transition: color 0.2s;
+  z-index: 10;
+}
+
+.admin-modal-close:hover {
+  color: var(--text-primary);
+}
+
+.admin-login-container {
+  padding: 40px 32px;
+}
+
+.admin-dashboard-container {
+  padding: 32px;
+  display: flex;
+  flex-direction: column;
+  height: 600px; /* Fixed rough height to ensure scroll */
+  max-height: calc(90vh - 40px);
+}
+
+.dashboard-content {
+  overflow-y: auto;
+  padding-right: 8px;
+  margin-top: 8px;
+}
+
+.reports-list {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.report-card {
+  background: var(--bg-card);
+  border: 1px solid var(--glass-border);
+  border-radius: 12px;
+  padding: 16px;
+  transition: transform 0.2s;
+}
+
+.report-card:hover {
+  border-color: var(--glass-hover);
+  transform: translateY(-2px);
+}
+
+.report-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+

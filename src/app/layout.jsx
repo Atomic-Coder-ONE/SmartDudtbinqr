@@ -1,5 +1,6 @@
 import '../index.css';
 import Header from '../components/Header';
+import AdminPanel from '../components/AdminPanel';
 
 export const metadata = {
     title: 'Smart Dustbin QR',
@@ -14,6 +15,7 @@ export default function RootLayout({ children }) {
                 <main className="container animate-slide-up">
                     {children}
                 </main>
+                <AdminPanel />
             </body>
         </html>
     );
