@@ -1,5 +1,5 @@
 import { Trash2 } from 'lucide-react';
-import { Link } from 'react-router-dom';
+import Link from 'next/link';
 
 export default function Header() {
     return (
@@ -8,7 +8,7 @@ export default function Header() {
                 <Trash2 size={24} color="white" />
             </div>
             <div>
-                <Link to="/" style={{ textDecoration: 'none' }}>
+                <Link href="/" style={{ textDecoration: 'none' }}>
                     <h1 className="font-bold text-xl" style={{ color: 'white' }}>SmartBin Hub</h1>
                 </Link>
                 <p className="text-sm text-dim" style={{ marginTop: '2px' }}>Eco-friendly Waste Management</p>
