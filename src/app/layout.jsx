@@ -3,7 +3,7 @@ import Header from '../components/Header';
 import AdminPanel from '../components/AdminPanel';
 
 export const metadata = {
-    title: 'Smart Dustbin QR',
+    title: 'SwachhGrid',
     description: 'Manage smart dustbins efficiently',
 };
 

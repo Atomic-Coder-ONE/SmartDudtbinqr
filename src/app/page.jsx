@@ -13,7 +13,7 @@ function HomeContent() {
         <div className="flex flex-col gap-6 w-full">
             <div className="text-center mt-4 animate-slide-up" style={{ animationDelay: '0.1s' }}>
                 <div className="flex justify-center mb-4">
-                    <div className="glass-panel" style={{ padding: '20px', borderRadius: '50%', background: 'rgba(255,255,255,0.05)' }}>
+                    <div className="glass-panel" style={{ padding: '20px', borderRadius: '50%', background: 'var(--glass-bg)' }}>
                         <QrCode size={48} className="text-accent" />
                     </div>
                 </div>
@@ -31,7 +31,7 @@ function HomeContent() {
                         <Trash size={28} className="text-accent" />
                     </div>
                     <div>
-                        <h3 className="text-xl font-bold" style={{ color: 'white' }}>Dustbin is Full</h3>
+                        <h3 className="text-xl font-bold" style={{ color: 'var(--text-primary)' }}>Dustbin is Full</h3>
                         <p className="text-sm text-dim mt-2" style={{ lineHeight: '1.5' }}>Tap here if the bin has reached its maximum capacity. We will dispatch a collection vehicle.</p>
                     </div>
                 </button>
@@ -45,7 +45,7 @@ function HomeContent() {
                         <AlertCircle size={28} style={{ color: 'var(--danger)' }} />
                     </div>
                     <div>
-                        <h3 className="text-xl font-bold" style={{ color: 'white' }}>Report an Issue</h3>
+                        <h3 className="text-xl font-bold" style={{ color: 'var(--text-primary)' }}>Report an Issue</h3>
                         <p className="text-sm text-dim mt-2" style={{ lineHeight: '1.5' }}>Tap here to report damage, bad odor, broken sensors, or other operational issues.</p>
                     </div>
                 </button>
